@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flask Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+<body>
+    <h1> Welcome to Sample Site </h1>
+
+    <p class="red"> This text is affected by a <strong> separate </strong> style sheet </p>
+
+    <img src="{{url_for('static', filename='images/child.JPG')}}" alt="" id='img1' width="400">
+    <i> Image- serving static assets</i>
+
+    
+</body>
+</html>
